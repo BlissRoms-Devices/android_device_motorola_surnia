@@ -20,7 +20,7 @@ TARGET_SCREEN_HEIGHT := 960
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := surnia
-PRODUCT_NAME := cm_surnia
+PRODUCT_NAME := bliss_surnia
 PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := surnia

@@ -42,3 +42,32 @@ TARGET_POWERHAL_VARIANT := qcom
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
+# Block_Build
+Bliss_Build_Block:=1
+
+# Blissful building options
+BLISSIFY := true
+BLISS_O3 := true
+BLISS_GRAPHITE := true
+#BLISS_STRICT := true
+BLISS_KRAIT := true
+BLISS_PIPE := true
+FLOOP_NEST_OPTIMIZE := true
+ENABLE_GCCONLY := true
+TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
+FAST_MATH := true
+ENABLE_MODULAR_O3 := true
+ENABLE_LTO := true
+LINK_TIME_OPTIMIZATIONS := true
+TARGET_USE_ION_COMPAT := true
+TARGET_USE_KRAIT_PLD_SET := true
+TARGET_ENABLE_UKM := true
+BLISS_DEVELOPER := Vatsal
+
+#WITH_LZMA_OTA := true
+#SaberMod
+
+# Kernel Toolchain
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-linux-androideabi-4.9/bin
+KERNEL_TOOLCHAIN_PREFIX := arm-linux-androideabi-
