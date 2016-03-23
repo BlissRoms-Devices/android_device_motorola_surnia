@@ -17,6 +17,8 @@ $(call inherit-product, device/motorola/surnia/full_surnia.mk)
 # Boot animation
 TARGET_SCREEN_WIDTH := 540
 TARGET_SCREEN_HEIGHT := 960
+PRODUCT_COPY_FILES += \
+     vendor/bliss/prebuilt/common/bootanimation/600.zip:system/media/bootanimation.zip
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := surnia
